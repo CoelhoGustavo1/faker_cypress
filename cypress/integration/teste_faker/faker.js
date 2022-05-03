@@ -3,7 +3,7 @@ describe("Primeiro teste utilizando o FAKER", () => {
   faker.locale = "pt_BR";
 
   const randomName = faker.name.findName(); // Rowan Nikolaus
-  const randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
+  const randomEmail = faker.internet.email(randomName); // Kassandra.Haley@erich.biz
   const randomPhoneNumber = faker.phone.phoneNumber(); // (279) 329-8663 x30233
   const firstName = faker.name.firstName();
   const lastName = faker.name.lastName();
@@ -24,6 +24,3 @@ describe("Primeiro teste utilizando o FAKER", () => {
     cy.log(country);
   });
 });
-
-//Util Links
-//https://github.com/faker-js/faker
