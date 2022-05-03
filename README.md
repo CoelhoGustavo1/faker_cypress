@@ -6,4 +6,5 @@ npm install @faker-js/faker --save-dev
 
 # Links
 https://fakerjs.dev/
+
 https://github.com/faker-js/faker
